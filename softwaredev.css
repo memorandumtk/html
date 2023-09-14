@@ -1,0 +1,51 @@
+
+body{
+    text-align: center;
+    background-color: beige;
+}
+
+.me{
+    font-size: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9c9595;
+}
+
+nav li {
+  float: right;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #111111;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.left{
+  position: absolute;
+  left: 0px;
+  width: 30%;
+  padding: 10px 0;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 10%;
+  padding: 10px 0;
+}

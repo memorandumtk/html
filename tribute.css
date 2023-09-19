@@ -1,0 +1,58 @@
+/* body part */
+body{
+    background: linear-gradient(to bottom, rgb(153, 255, 153, 0.2), rgb(128, 128, 128, 0.2));
+}
+
+/* header part */
+.header-div{
+    text-align: center;
+}
+.header-div p{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* main part */
+.main-div{
+    text-align: center;
+}
+.main-image-div:hover p{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin: 2rem;
+    border: 3px lightcoral;
+    border-style: dotted;
+    border-radius: 10px;
+    z-index: 2;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+/* slidein animation for p when hovering */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+.main-image-div p {
+    display: none;
+}
+.main-image{
+    width: 800px;
+    height: 450px;
+}
+.main-div h1{
+    font-size: 3rem;
+}
+.main-audio{
+    margin: 2rem 0 3rem;
+}
+.main-movie{
+    width: 800px;
+    height: 450px;
+}

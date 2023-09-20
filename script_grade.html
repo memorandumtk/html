@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function myfunction(){
+            let math = Number(document.getElementById("math").value);
+            let science = Number(document.getElementById("science").value);
+            let english = Number(document.getElementById("english").value);
+            let result = (math + science + english) / 3
+            let grade = (result > 80) ? "A"
+                : (result > 70) ? "B"
+                : (result > 60) ? "C"
+                : (result > 50) ? "D"
+                : "Fail"
+            document.getElementById("grade").value = grade;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="math">Math
+            <input type="number" id="math" name="math">
+            </label>
+            <label for="science">Science
+            <input type="number" id="science" name="science">
+            </label>
+            <label for="english">English
+            <input type="number" id="english" name="english">
+            </label>
+            <label for="grade">Grade
+            <input type="text" id="grade" name="grade">
+            </label>
+            <input type="button" id="btn1" name="submit" value="submit" onclick=myfunction()>
+            <!-- <label for="result">
+                <input type="text" id="res1" name="result">
+            </label> -->
+        </form>
+    </div>
+</body>
+</html>
